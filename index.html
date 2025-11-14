@@ -4,12 +4,39 @@
     <title>Navigation Bar</title>
     <style>
         ul {
-            
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
         }
 
         a {
-            
+           float: none;
+           background-color: #f1f1f1; 
         }
+    
+        li a {
+            display: block;
+            color:  #000;
+            padding: 8px 10px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: #04aa04;
+            color: white;
+        }
+
+        li a:hover:not (a.active) {
+            background-color: #555;
+            color: white;
+        }    
+
+
+
+
+
+
     </style>
 </head>
 
